@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+:root {
+    --primary-color: #1F441E;
+    --font-color:#FFFFFF;
+    --secondary-color: #F5F5DC;
+   
+  }
+  body{
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+  }
+
+
+.first-top-intro-div{
+    
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    background-color: var(--primary-color);
+    
+}
+
+.intro-div__para{
+    margin: 20px;
+    color: var(--font-color);
+    display: flex;
+   
+    
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.intro-div__para p{
+    font-size: 25px;
+} 
+.intro-div__img{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-image: url("second-bg-img.jpg");
+    background-size: cover;
+
+}
+.card{
+    background-color: var(--primary-color);
+    height:300px;
+    width: 240px;
+    text-align: center;
+    color: white;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+.storey-container{
+    /* background-image: url("third.jpg"); */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.storey{
+    
+    text-align: center;
+    background-image: url("golden_frame.png");
+}
+.inside-storey-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+
+
+
+
+/* timeline */
+.wedding-timeline-heading{
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: var(--secondary-color);
+ 
+    
+  }
+  .left::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px; 
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .left {
+    left: 0;
+  }
+
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+/* stay  div */
+.stay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    
+}
+.stay h3{
+    background-image:url("golden_frame.png");
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+/* City  */
+.city-div{
+    background-image: url("abovefooter.jpg");
+    
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  
+  
+    
+}
+.city-card{
+  text-align: center;
+    margin: 20px;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+
+/* COUNTDOWN */
+
+.countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.count-card{
+    background-color: var(--secondary-color);
+    margin: 10px;
+    height: 170px;
+    width: 170px;
+    text-align: center;
+    border-radius: 4px;
+}
+/* family div */
+
+.family-div{
+text-align: center;
+}
+
+.above-footer-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    text-align: center;
+    
+    
+}
+.above-footer-div__card{
+    margin: 20px;
+}
+
+
+
+
+/* FOOTER  */
+
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--primary-color);
+}
+.footer-img{
+    background-image: url("footer1");
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2em;
+    color: white;
+    font-style: italic;
+}
