@@ -4,7 +4,7 @@ let countMinutes=document.querySelector(".minutes")
 let countSeconds=document.querySelector(".seconds")
 
 const countDown=()=>{
-    const finalDay=new Date("August 1,2021 00:00:00").getTime();
+    const finalDay=new Date("June 25,2022 00:00:00").getTime();
     console.log(finalDay)
     const now=new Date().getTime();
     const gap=finalDay-now;
